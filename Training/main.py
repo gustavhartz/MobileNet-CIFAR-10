@@ -58,8 +58,8 @@ if __name__ == "__main__":
     argparser.add_argument('--seed', type=int, default=42, help='Seed')
 
     # Save top k models
-    argparser.add_argument('--save_top_k', type=int, default=-1,
-                           help='Top model to save defined by metric. -1 is none')
+    argparser.add_argument('--save_top_k', type=int, default=1,
+                           help='Top model to save defined by metric. -1 is all')
 
     # Num epochs
     argparser.add_argument('--num_epochs', type=int,
